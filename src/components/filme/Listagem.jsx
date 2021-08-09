@@ -14,7 +14,8 @@ import {
 } from "@material-ui/core";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
-import { excluirFilme } from "../redux/filme/actions";
+import { excluirFilme } from "../../redux/filme/actions";
+import Translator from "../Translator.jsx";
 
 const Listagem = (props) => {
   const { filmes } = props;
@@ -32,7 +33,9 @@ const Listagem = (props) => {
   return (
     <>
       {(!filmes || filmes.length === 0) && (
-        <span>Não existem filmes a ser listados.</span>
+        <span>
+          <Translator path="MESSAGES.FILMES" />
+        </span>
       )}
       {filmes && filmes.length > 0 && (
         <>
@@ -65,11 +68,17 @@ const Listagem = (props) => {
                 <Table size="small">
                   <TableHead>
                     <TableRow>
-                      <TableCell>Título</TableCell>
-                      <TableCell>Subtitulo</TableCell>
-                      <TableCell>Diretor</TableCell>
+                      <TableCell>
+                        <Translator path="LABEL.TITULO" />
+                      </TableCell>
+                      <TableCell>
+                        <Translator path="LABEL.SUBTITULO" />
+                      </TableCell>
+                      <TableCell>
+                        <Translator path="LABEL.DIRETOR" />
+                      </TableCell>
                       <TableCell align="center" colSpan={2}>
-                        Ações
+                        <Translator path="LABEL.ACOES" />
                       </TableCell>
                     </TableRow>
                   </TableHead>

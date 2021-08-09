@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 import { criarServidor } from "./services/mirage-server";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import routes from "./routes";
-import "./i18n";
+import "./i18next/index.js";
 
 const ambiente = process.env.NODE_ENV;
 if (ambiente !== "production") {

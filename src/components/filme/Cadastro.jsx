@@ -3,7 +3,7 @@ import { Formik, Form, Field } from "formik";
 import * as yup from "yup";
 import { Button, Grid, TextField } from "@material-ui/core";
 //import { useTranslation } from "react-i18next";
-import Translator from "../atoms/Translator";
+import Translator from "../Translator.jsx";
 
 const FILME_INICIAL = {
   titulo: "",
