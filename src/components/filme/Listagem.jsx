@@ -15,7 +15,7 @@ import {
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { excluirFilme } from "../../redux/filme/actions";
-import Translator from "../Translator.jsx";
+import Translator from "../Translator";
 
 const Listagem = (props) => {
   const { filmes } = props;
