@@ -1,7 +1,7 @@
 # Cadastro de filmes
 
 Aplicação onde você poderá visualizar filmes já cadastrados, alterar alguma informação destes, adicionar outros ou ainda excluí-los;
-Resultado de um treinamento de React oferecido pela Softplan e ministrado pelo meu grande colega Leonardo Biazus (https://github.com/lbiazus), em união com os meus conhecimentos.
+Resultado de um treinamento de React oferecido pela Softplan e ministrado pelo meu grande colega Leonardo Biazus (https://github.com/lbiazus). Fiz algumas alterações no projeto final, adicionando internacionalização e o sass.
 A aplicação foi desenvolvida em React e como o foco era este, foi utilizado o MirageJs para simular uma API. Já na parte do Redux, inicialmente a implementação foi feita Thunk e após, comentada, e implementado em Saga para fins didáticos.
 
 ## Technologies
