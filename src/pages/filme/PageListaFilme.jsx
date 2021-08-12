@@ -32,7 +32,7 @@ const PageListaFilme = (props) => {
       <Section titulo={t("TITLE.LISTA_FILMES")}>
         <Grid container spacing={2}>
           <Grid item xs={11}>
-            <Grid container spacing={2} justify="flex-end">
+            <Grid container spacing={2} justifyContent="flex-end">
               <Grid item>
                 <Button
                   variant="contained"
